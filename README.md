@@ -11,6 +11,8 @@ The dataset attached contains **129** indicators from **~20** sources. The files
 
 All of them are compressed within a ZIP file (data.zip). The data is also available as a SQLite database (db.sqlite).
 
+[The files above contain data only for the focus countries (Colombia, Yemen, and Kenya). All value data is available in the table `value_all` table.]
+
 
 Description of Files
 --------------------
