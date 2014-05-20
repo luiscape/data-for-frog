@@ -32,6 +32,7 @@ for (i in 1:length(source_list)) {
     }
 }
 
+# Writing CSV files. 
 write.csv(final_dataset, 'frog-data/dataset.csv', row.names = F)
 write.csv(final_indicator, 'frog-data/indicator.csv', row.names = F)
 write.csv(final_value, 'frog-data/value.csv', row.names = F)
