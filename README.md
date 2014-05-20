@@ -1,6 +1,8 @@
 Data for frog
 =============
 
+**NOTE:** This data is for working and demonstration purposes only. It should note be trusted as authoritative data or alike. For more information get in touch with the HDX team [here](http://docs.hdx.rwlabs.org/get-involved/).
+
 The dataset attached contains **129** indicators from **~20** sources. The files are organized as follows:
 
 - value.csv
