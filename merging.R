@@ -32,6 +32,12 @@ for (i in 1:length(source_list)) {
     }
 }
 
+final_value_all <- final_value
+
+# Subsetting for the focus countries. 
+focus_countries <- as.list(c('YEM', 'KEN', 'COL'))
+final_value <- subset(final_value, final_value$region == focus_countries)
+
 # Writing CSV files. 
 write.csv(final_dataset, 'frog-data/dataset.csv', row.names = F)
 write.csv(final_indicator, 'frog-data/indicator.csv', row.names = F)
@@ -46,6 +52,7 @@ db <- dbConnect(SQLite(), dbname="frog-data/db.sqlite")
     dbWriteTable(db, "dataset", final_dataset, row.names = FALSE, overwrite = TRUE)
     dbWriteTable(db, "indicator", final_indicator, row.names = FALSE, overwrite = TRUE)
     dbWriteTable(db, "value", final_value, row.names = FALSE, overwrite = TRUE)
+    dbWriteTable(db, "value_all", final_value_all, row.names = FALSE, overwrite = TRUE)
     
     # for testing purposes
     # test <- dbReadTable(db, "value")
