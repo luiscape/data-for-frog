@@ -1,5 +1,4 @@
-Data for frog
-=============
+![data for frogs](https://raw.githubusercontent.com/luiscape/data-for-frog/master/frog_jumping_over_data.jpg)
 
 **NOTE:** This data is for working and demonstration purposes only. It should note be trusted as authoritative data or alike. For more information get in touch with the HDX team [here](http://docs.hdx.rwlabs.org/get-involved/).
 
