@@ -1,0 +1,256 @@
+idp,Code,Indicator Name,Source,Atrribute/Indicator,In HDX (Y/N),Is_in_SW,Unit,Entity type,,Update cycle,Numerical data,Issue,Comments
+1,C,Table 1: COUNTRY CONTEXT,,,,,,,,,,,
+1.2,CG,General,,,,,,,,,,,
+1.2,CG030,UN Short name,UNTERM,Attribute,Y,Y,Name,Country,,As needed,N,Request List,
+1.2,CG040,UN Official name within statistical tables,UNSD,Attribute,N,N,Name,Country,,As needed,N,No Issue,This is available in the system now under CG070.
+1.2,CG050,UN Region and Subregion designations,UNSD,Attribute,N,N,Name,Country,,As needed,N,Request List,
+1.2,CG060,UN Numerical code (M49),UNSD,Attribute,Y,Y,Number,Country,,As needed,Y,Request List,
+1.2,CG080,Capital City,UNTERM,Attribute,Y,Y,Name,Country,,As needed,N,Request List,The indicator is simply wrong in our repository: it comes the same as CG070 -- http://data.hdx.rwlabs.org/dataset/capital_city/resource/80199a06-6eaf-4fea-ac71-ae0fbe8f1f7f
+1.2,CG100,Languages,"UNTERM
++ CIA World Factbook",Attribute,Y,Y,Code,Country,,As needed,N,No Data,
+1.2,CG120,Currency,"UNTERM
++ Wikipedia",Attribute,Y,Y,Name,Country,,As needed,N,No Data,ISO3 codes are available instead.
+1.2,CG150,Income group,World Bank,Attribute,Y,Y,Code,Country,,Annually,N,No Data,
+1.2,CG300,Land area,World Bank,Attribute,Y,Y,Number,Country,,As needed,Y,No Issue,The code is wrong in the repository. http://data.hdx.rwlabs.org/dataset/land_area
+1.2,CG250,Water (%),Wikipedia,Attribute,N,N,Percent,Country,,As needed,Y,Request List,
+1.2,CG290,Date of Entry into UN,UNTERM,Attribute,Y,Y,Date,Country,,As needed,N,No Data,
+1.3,CH,Crises History,,,,,,,,,,,
+1.3,CH040,"Earthquake, tropical storm/typhoon, tsumani, volcano, weather and climate","Pacific Disaster Center
++ CDACS",Indicator,N,N,Text,Country??,,As needed,N,Request List,
+1.3,CH070,Number of disasters,EM-DAT,Indicator,Y,Y,Count,Country,,Annually,Y,No Issue,"Keep this indicator but reduce the scope. So far, it has data from 1900 and data can't be verified easily"
+1.3,CH080,Total deaths by disasters,EM-DAT,Indicator,Y,Y,Count,Country,,Annually,Y,No Issue,
+1.3,CH090,Total affected by disasters,EM-DAT,Indicator,Y,Y,Count,Country,,Annually,Y,No Issue,
+1.3,CH100,Total damages by disasters ,EM-DAT,Indicator,Y,Y,USD,Country,,Annually,Y,No Issue,
+1.3,PVX080,Number of people made homeless by disasters,EM-DAT,Indicator,Y,Y,Count,Country,,,Y,No Issue,
+1.3,PVX090,Number of people injured in disasters,EM-DAT,Indicator,Y,Y,Count,Country,,,Y,No Issue,
+1.3,PVX100,Total number of people affected by disasters,EM-DAT,Indicator,Y,Y,Count,Country,,,Y,No Issue,
+1.3,CH120,Battle deaths,UCDP,Indicator,N,N,Count,Country,,Annually,Y,Request List,
+1.3,CH130,Refugee Population Statistics,UNHCR,Indicator,Y,N,Count,Country,,Annually,Y,No Issue,"UNHCR data comes in a number of categories. We need to better define this indicator. UNHCR data is NOT comming through CPS. The data is in HDX, but it is not being run through CPS."
+1.4,CD,Brief Descriptions,,,,,,,,,,,
+1.4,CD010,Geography,Wikipedia,Attribute,Y,Y,Text,Country,,As needed,N,No Data,
+1.4,CD030,Brief Description on Climate,Wikipedia,Attribute,Y,Y,Text,Country,,As needed,N,No Data,
+1.4,CD050,Brief Description on Economy,Wikipedia,Attribute,Y,Y,Text,Country,,As needed,N,No Data,
+1.4,CD060,Brief Description on Transport,Wikipedia,Attribute,Y,Y,Text,Country,,As needed,N,No Data,
+1.4,CD070,Brief Description on Education,Wikipedia,Attribute,Y,Y,Text,Country,,As needed,N,No Data,
+1.4,CD080,Brief Description on Demographics,Wikipedia,Attribute,Y,Y,Text,Country,,As needed,N,No Data,
+1.4,CD090,Brief Description on Religion,Wikipedia,Attribute,Y,Y,Text,Country,,As needed,N,No Data,
+2,P,Table 2: PREPAREDNESS,,,,,,,,,,,
+2.1,PS,Socio-economic indicators,,,,,,,,,,,
+2.1,PSP,Population,,,,,,,,,,,
+2.1,PSP010,Total Population - Both Sexes,UNDESA (UNFPA) - World Population Prospects: The 2010 Revision,Indicator,Y,Y,Thousands,Country,,Annually,Y,No Issue,Total Population - Both Sexes This source is the authority on population issues. This variable should be kept. Text originally was strikethrough
+2.1,PSP050,Population Growth Rate ,UNDESA (UNFPA) - World Population Prospects: The 2010 Revision,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,Average exponential rate of growth of the population over a given period.  It is calculated as ln(Pt/P0)/t where t is the length of the period. It is expressed as a percentage
+2.1,PSP060,Average Population Growth Rate ,World Bank,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,
+2.1,PSP070,Median Age of Population,UNDESA (UNFPA) - World Population Prospects: The 2010 Revision,Indicator,Y,Y,Years,Country,,Annually,Y,No Issue,"Age that divides the population in two parts of equal size, that is, there are as many persons with ages above the median as there are with ages below the median"
+2.1,PSP080,Population Density (persons per square km),"UNDESA (UNFPA) - World Population Prospects: The 2010 Revision
++ World Bank",Indicator,Y,Y,Number,Country,,Annually,Y,No Issue,Population per square Kilometre
+2.1,PSP100,Population residing in urban areas (%),"UNDESA (UNFPA) - World Urbanization Prospects: The 2011 Revision
++ World Bank",Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,
+2.1,PSP110,Population in urban agglomerations of more than 1 million,World Bank,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,
+2.1,TT027,International migrant stock by sex,UNDESA,Indicator,Y,N,percent,Country,,annually,Y,No Data,
+2.1,TT027T,International migrant stock,UNDESA,Indicator,Y,Y,percent,country,,annually,Y,No Issue,
+2.2,PSE,Economic status,,,,,,,,,,,
+2.2,PSE010,GDP (PPP),"World Bank
++ UNSD",Indicator,N,N,USD,Country,,Annually,Y,Request List,Gross domestic product based on Purchasing Power Parities
+2.2,PSE030,GDP per capita (PPP),"World Bank
++ UNSD",Indicator,Y,Y,USD,Country,,Annually,Y,No Issue,
+2.2,PSE090,GNI per capita (PPP),"World Bank
++ UNSD",Indicator,Y,Y,USD,Country,,Annually,Y,No Issue,Gross national income per capita based on Atlas Method and Purchasing Power Parities
+2.2,PSE110,GNI per capita,"UNDP HDR
++ World Bank",Indicator,Y,Y,USD,Country,,Annually,Y,No Issue,Gross National Income per capita
+2.2,PSE120,GNI per capita,World Bank,Indicator,Y,Y,USD,Country,,Annually,Y,No Issue,Gross National Income per capita
+2.2,PSE130,Household final consumption expenditure per capita (PPP constant 2005 int$),World Bank,Indicator,Y,Y,USD,Country,,Annually,Y,No Issue,
+2.2,PSE140,"Age dependency ratio, old (% of working-age population) 2009",World Bank,Indicator,Y,Y,Number,Country,,Annually,Y,No Issue,World Development Elements
+2.2,PSE150,"Age dependency ratio, young (% of working age population) 2009",World Bank,Indicator,Y,Y,Number,Country,,Annually,Y,No Issue,World Development Elements
+2.2,PSE160,Population living below $1.25 PPP per day (%),UNDP HDR,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,Percentage of the population living below the international poverty line $1.25 (in purchasing power parity terms) a day
+2.2,PSE170,Poverty headcount ratio at US$1.25 a day (% of population),World Bank,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,
+2.2,PSE180,Number of people living below $1.25 per day (million),World Bank,Indicator,N,N,Number,Country,,Annually,Y,Request List,
+2.2,PSE190,Population living on <$1 (PPP int. $) a day (%),WHO,Indicator,N,N,Percent,Country,,Annually,Y,Request List,
+2.2,PSE200,Average annual rate of inflation (%),World Bank,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,
+2.2,PSE210,Gini index,World Bank,Indicator,Y,Y,Number,Country,,Annually,Y,No Issue,
+2.2,PSE220,Human Development Index (HDI) rank (out of 187),UNDP,Indicator,Y,Y,Rank,Country,,Annually,Y,No Issue,Human Development Index rank
+2.2,PSE230,Global Gender Gap Index,World Economic Forum,Indicator,Y,Y,Number,Country,,Annually,Y,No Issue,Human Development Index rank
+2.2,PSE240,Central government debt as % of GDP,World Bank,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,
+2.2,PSE250,Tax revenue as % of GDP,World Bank,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,
+2.2,PSE260,"CPIA measures of quality of government (social protection, transparency, etc)",World Bank,Indicator,N,N,Number,Country,,Annually,Y,Request List,Country Policy and Institutional Assessment
+2.3,TT023,Total unemployement by gender,ILO KILM (Key Indicators of the labour market),Indicator,N,N,,,,,,Request List,"The indicator shows-up in the repository also, but with no data."
+2.3,PV,Crisis vulnerability indicators,,,,,,,,,,,
+2.3,PVH,Health,,,,,,,,,,,
+2.3,PVH010,Life Expectancy at Birth - Both Sexes ,"UNDESA (UNFPA) - World Population Prospects: The 2010 Revision
++ WHO",Indicator,Y,Y,Years,Country,,Annually,Y,No Issue,
+2.3,PVH200,"Crude death rate by major area, region and country, 1950-2100",UNDESA,Indicator,Y,Y,,,,,,No Data,
+2.3,PVH050,Mortality rate / Deaths - Both Sexes,"UNDESA (UNFPA) - World Population Prospects: The 2010 Revision
++ UNSD
++ WHO",Indicator,Y,Y,Thousands,Country,,Annually,Y,No Issue,
+2.3,PVH080,* Adult mortality - Female,World Bank Data 2010,Indicator,Y,Y,"Number per 1,000",Country,,Annually,Y,No Issue,
+2.3,PVH090,* Adult mortality - Male,World Bank Data 2010,Indicator,Y,Y,"Number per 1,000",Country,,Annually,Y,No Issue,
+2.3,PVH100,"Under-five mortality rate, five-year period","UNDESA (UNFPA) - World Population Prospects: The 2010 Revision
++ World Bank
++ UNDP HDR
++ WHO
++ UNICEF",Indicator,Y,Y,"Number per 1,000",Country,,Annually,Y,No Issue,
+2.3,PVH140,"Children under five mortality rate per 1,000 live births",,Indicator,Y,Y,,,,,,No Issue,
+2.3,PVH150,Infant Mortality Rate (IMR),"UNDESA (UNFPA) - World Population Prospects: The 2010 Revision
++ WHO
++ World Bank
++ CIA World Factbook",Indicator,Y,Y,"Number per 1,000",Country,,Annually,Y,No Issue,"Probability of dying between birth and exact age 1. It is expressed as deaths per 1,000 births"
+2.3,PVH180,Maternal mortality ratio,"UNDP HDR
++ UNICEF
++ WHO World Health Statistics",Indicator,Y,Y,Number,Country,,Annually,Y,No Issue,"Ratio of the number of maternal deaths to the number of live births in a given year, expressed per 100,000 live births"
+2.3,PVH190,"Maternal mortality ratio per 100,000 live births",WHO,Indicator,Y,Y,,,,,,No Issue,
+2.3,PVH210,H5N1 influenza - number of reported cases,WHO,Indicator,N,N,Count,Country,,Annually,Y,Request List,
+2.3,PVH220,Persons with disabilities (%),WHO World Health Report 2011,Indicator,N,N,Percent,Country,,Annually,Y,Request List,
+1.3,TT008,Total number of reported malaria cases,WHO,Indicator,Y,Y,Number,Country,,Annually,Y,No Data,
+2.3,TT009,Total estimated number of malaria cases,WHO,Indicator,Y,Y,Number,Country,,Annually,Y,No Data,
+2.3,TT010,Total number of reported deaths due to malaria,WHO,Indicator,Y,Y,Number,Country,,Annually,Y,No Data,
+2.3,TT011,Total number of estimated deaths due to malaria,WHO,Indicator,Y,Y,Number,Country,,Annually,Y,No Data,
+2.3,TT012,Total number of children sleeping under insecticide-treated nets,WHO,Indicator,Y,N,Number,Country,,Annually,Y,No Data,
+2.3,TT012R,Total number of children sleeping under insecticide-treated nets (Rural),WHO,Indicator,Y,N,Number,Country,,Annually,Y,No Data,
+2.3,TT012U,Total number of children sleeping under insecticide-treated nets (Urban),WHO,Indicator,Y,N,Number,Country,,Annually,Y,No Data,
+2.3,TT013,Total number of children with fever who received treatment with antimalarial,WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT013R,Total number of children with fever who received treatment with antimalarial (Rural),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT013U,Total number of children with fever who received treatment with antimalarial (Urban),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.13,TT015,Total number of suspected meningitis cases reported,WHO,Indicator,Y,Y,Number,Country,,Annually,Y,No Data,
+2.3,TT016,Total number of suspected meningitis deaths reported,WHO,Indicator,Y,Y,Number,Country,,Annually,Y,No Data,
+2.3,TT017,Total number of meningities epidemic districts,WHO,Indicator,Y,Y,Number,Country,,Annually,Y,No Data,
+2.3,TT018,Total number of reported cases of cholera,WHO,Indicator,Y,Y,Number,Country,,Annually,Y,No Data,
+2.3,TT019,Total number of reported deaths of cholera,WHO,Indicator,Y,Y,Number,Country,,Annually,Y,No Data,
+2.3,TT020,Cholera case fatality rate,WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT021,Total number of influenza viruses detected,WHO,Indicator,Y,N,Number,Country,,Annually,Y,No Data,
+2.3,TT022,Total number of influenza-like illness cases,WHO,Indicator,Y,N,Number,Country,,Annually,Y,No Data,
+2.13,TT029,Number of sexual violence cases,UNODC,Indicator,Y,Y,Number,Country,,Annually,Y,No Data,"Sexual violence looks like a protection indicator, not so much a health indicator."
+2.3,TT028,Percentage of people with acute watery diarrhea,WHO,Indicator,Y,N,Percent,Country,,Annually,Y,No Data,
+2.3,TT030,"Prevalence of HIV, total (% of population aged 15-49)",World Bank,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT031R2,Antenatal care coverage - at least one visit in the two years preceding the study (Rural),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT031R3,Antenatal care coverage - at least one visit in the three years preceding the study (Rural),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT031R5,Antenatal care coverage - at least one visit in the five years preceding the study (Rural),WHO,Indicator,Y,N,Percent,Country,,Annually,Y,No Data,
+2.3,TT031U2,Antenatal care coverage - at least one visit in the two years preceding the study (Urban),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT031U3,Antenatal care coverage - at least one visit in the three years preceding the study (Urban),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT031U5,Antenatal care coverage - at least one visit in the five years preceding the study (Urban),WHO,Indicator,Y,N,Percent,Country,,Annually,Y,No Data,
+2.3,TT033R2,"Proportion of births attended by skilled health personnel (2 years before survey, rural)",WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT033R3,"Proportion of births attended by skilled health personnel (3 years before survey, rural)",WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT033R5,"Proportion of births attended by skilled health personnel (5 years before survey, rural)",WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT033U2,"Proportion of births attended by skilled health personnel (2 years before survey, urban)",WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT033U3,"Proportion of births attended by skilled health personnel (3 years before survey, urban)",WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT033U5,"Proportion of births attended by skilled health personnel (5 years before survey, urban)",WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT034,Prevalence of condom use by adults during higher-risk sex (15-49) (%),WHO,Indicator,Y,N,Percent,Country,,Annually,Y,No Data,
+2.3,TT035,Population aged 15-24 years with comprehensive correct knowledge of HIV/AIDS (%),WHO,Indicator,Y,N,Percent,Country,,Annually,Y,No Data,
+2.13,TT036,Share of women in wage employment in the non-agricultural sector (%),World Bank,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT037R3,Antenatal care coverage - at least four visits in the three years preceding the study (Rural),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT037R5,Antenatal care coverage - at least four visits in the five years preceding the study (Rural),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT037U3,Antenatal care coverage - at least four visits in the three years preceding the study (Urban),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT037U5,Antenatal care coverage - at least four visits in the five years preceding the study (Urban),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.4,PVF,Food Security,,,,,,,,,,,
+2.4,PVF010,Food Insecurity,National Nutrition Survey 2011,Indicator,N,N,Percent,Country,,Annually,Y,Request List,
+2.4,PVF020,Per capita food supply (kcal/capita/day),FAO,Indicator,Y,N,Number,Country,,Annually,Y,No Issue,
+2.4,PVF030,Food security conditions,FEWS,Indicator,N,N,Text,Country,,Annually,N,Request List,
+2.5,PVN,Nutrition,,,,,,,,,,,
+2.5,PVN010,Prevalence of undernutrition,FAO,Indicator,Y,Y,Percent,Country,,Annually,Y,Request List,
+2.5,PVN020,Level of Global Acute Malnutrition,National Nutrition Survey 2011,Indicator,N,N,Percent,Country,,Annually,Y,Request List,
+2.5,PVN030,Level of Severe Acute Malnutrition,National Nutrition Survey 2011,Indicator,N,N,Percent,Country,,Annually,Y,Request List,
+2.5,PVN040,Under-five global acute malnutrition (GAM) rate,National Nutrition Survey 2011,Indicator,N,N,Percent,Country,,Annually,Y,Request List,
+2.5,PVN050,Children under 5 moderately or severely underweight,WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,
+2.5,PVN060,Prevalence of underweight children,UNICEF,Indicator,Y,Y,Number,Country,,Annually,Y,Request List,
+2.5,PVN070,Population below minimum level of dietary energy consumption,WHO,Indicator,Y,Y,Millions,Country,,Annually,Y,Request List,
+2.5,PVN080,Prevalence of undernourishment in total population 2005-7,World Bank,Indicator,N,N,PErcent,Country,,Annually,Y,Request List,
+2.3,TT024,Percentage of children less than 5 stunted (Both sexes),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT024F,Percentage of children less than 5 stunted (Female),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT024M,Percentage of children less than 5 stunted (Male),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT025,Percentage of children less than 5 overweight (Both sexes),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT025F,Percentage of children less than 5 overweight (Female),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT025M,Percentage of children less than 5 overweight (Male),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT026,Percentage of children less than 5 wasted (Both sexes),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT026F,Percentage of children less than 5 wasted (Female),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.3,TT026M,Percentage of children less than 5 wasted (Male),WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,
+2.6,PVE,Education,,,,,,,,,,,
+2.6,PVE010,Public expenditure on education (% of GDP),UNDP HDR,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,Total public expenditure (current and capital) on education expressed as a percentage of GDP
+2.6,PVE030,Expected years of schooling (of children under 7) (years),UNDP HDR,Indicator,Y,Y,Years,Country,,Annually,Y,Request List,Number of years of schooling that a child of school entrance age can expect to receive if prevailing patterns of age-specific enrolment rates persist throughout the child’s life
+2.6,PVE040,"Adult literacy rate, both sexes","UNDP HDR
++ WHO",Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,"Percentage of the population ages 15 and older who can, with understanding, both read and write a short simple statement on their everyday life"
+2.6,PVE110,Mean years of schooling (of adults),UNDP HDR,Indicator,Y,Y,Years,Country,,Annually,Y,No Data,"Average number of years of education received by people ages 25 and older, converted from education attainment levels using official durations of each level"
+2.6,PVE120,Combined gross enrolment in education (both sexes),UNDP HDR,Indicator,Y,Y,Percent,Country,,Annually,Y,No Data,"The number of students enrolled in primary, secondary and tertiary levels of education, regardless of age, as a percentage of the population of theoretical school age for the three levels"
+2.6,PVE130,Total net enrolment ratio in primary education,UNICEF,Indicator,Y,Y,Number,Country,,Annually,Y,No Issue,
+2.7,PVW,"Water, Sanitation and Hygiene",,,,,,,,,,,
+2.7,PVW010,Proportion of the population using improved drinking water sources,WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,
+2.7,PVW040,Proportion of the population using improved sanitation facilities,WHO,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,
+2.7,PVW050,Population without access to improved sanitation (%),UNDP HDR 2011,Indicator,N,N,Percent,Country,,Annually,Y,Request List,
+2.8,PVS,Shelter,,,,,,,,,,,
+2.8,PVS010,Household electrification rate (% of households),World Bank,Indicator,N,N,Percent,Country,,Annually,Y,Request List,
+2.9,PVL,Logistics,,,,,,,,,,,
+2.9,PVL010,Airport,World Aeronautical Database,Indicator,Y,Y,Text,Country,,Annually,N,No Issue,
+2.9,PVL020,Ports,Netpas,Indicator,N,N,Text,Country,,Annually,N,Request List,
+2.9,PVL030,Roads (km²) ,World Bank,Indicator,Y,Y,Number,Country,,Annually,Y,No Issue,World Bank Development Elements 2010
+2.9,PVL040,Rail lines (km²) ,World Bank,Indicator,Y,Y,Number,Country,,Annually,Y,No Issue,World Bank Development Elements 2010
+2.11,PVX,Other,,,,,,,,,,,
+2.11,PVX010,ECHO Vulnerability Index score,ECHO (Global Needs Assessment),Indicator,Y,Y,Score,Country,,Annually,Y,No Issue,
+2.11,PVX020,ECHO Crisis Index score,ECHO (Global Needs Assessment),Indicator,Y,Y,Score,Country,,Annually,Y,No Issue,
+2.11,PVX040,Incidence of conflict,ACLED,Indicator,Y,Y,Count,Country,,Annually,Y,No Issue,
+2.11,PVX050,Incident locations,ACLED,Indicator,N,N,Name,Country,,Annually,N,Request List,Difficult to do much with this if there is no geometry or pcode included.
+2.11,PVX060,Impact of natural disasters: number of deaths (average per year per million people),UNDP HDR,Indicator,N,Y,Number per million,Country,,Annually,Y,Request List,"People confirmed as dead, or missing and presumed dead, as a result of natural disasters, which include drought, extreme temperature, flood, mass movement, wet storm and wildfire"
+2.11,PVX070,Impact of natural disasters: population affected (average per year per million people),UNDP HDR,Indicator,Y,N,Number per million,Country,,Annually,Y,No Issue,"People requiring immediate assistance during a period of emergency as a result of a natural disaster (as defined above), including displaced, evacuated, homeless and injured people"
+2.12,PC,Capacity indicators,,,,,,,,,,,
+2.12,PCH,Health,,,,,,,,,,,
+2.12,PCH010,Total expenditure on health as a percentage of gross domestic product,WHO,Indicator,N,N,Percent,Country,,Annually,Y,Request List,
+2.12,PCH020,Per capita government expenditure on health (PPP int. $),WHO,Indicator,N,N,USD,Country,,Annually,Y,Request List,
+2.12,PCH030,Physicians density (per 10 000 population),WHO,Indicator,N,N,"Number per 10,000",Country,,Annually,Y,Request List,
+2.12,PCH040,Density of pharmaceutical personnel (per 10 000 population),WHO,Indicator,N,N,"Number per 10,000",Country,,Annually,Y,Request List,
+2.12,PCH050,Community health workers density (per 10 000 population),WHO,Indicator,N,N,"Number per 10,000",Country,,Annually,Y,Request List,
+2.12,PCH060,Hospital beds (per 10 000 population),WHO,Indicator,N,N,"Number per 10,000",Country,,Annually,Y,Request List,
+2.12,PCH070,Other health service providers density (per 10 000 population),WHO,Indicator,N,N,"Number per 10,000",Country,,Annually,Y,Request List,
+2.12,PCH080,Median availability of selected generic medicines (%) - Public,WHO,Indicator,N,N,Percent,Country,,Annually,Y,Request List,
+2.12,PCH090,Routine EPI vaccines financed by government (%),UNICEF,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,
+2.12,PCH100,Percentage of children one year old immunized against measles,UNDESA,Indicator,Y,Y,Percent,Country,,Annually,Y,No Issue,
+2.12,PCH110,Number of infant deaths,World bank,Indicator,Y,Y,Number,Country,,Annually,Y,No Data,
+2.13,PCX,Other,,,,,,,,,,,
+2.13,PCX051,Mobile cellular subscriptions per 100 inhabitants,UNDESA MDGs,Indicator,Y,Y,Number per 100,Country,,Annually,Y,No Data,Duplicate of PCX090
+2.13,PCX080,Fixed telephone lines per 100 inhabitants,UNDESA MDGs,Indicator,Y,Y,Number per 100,Country,,Annually,Y,No Data,
+2.13,PCX090,Mobile cellular subscriptions (per 100 people) ,World Bank,Indicator,Y,Y,Number per 100,Country,,Annually,Y,No Issue,
+2.13,PCX100,Internet users (per 100 people) ,World Bank,Indicator,Y,Y,Number per 100,Country,,Annually,Y,No Issue,
+2.13,PCX130,Logistics performance index,World Bank,Indicator,Y,Y,Number,Country,,Annually,Y,No Issue,
+2.13,PCX140,Percentage of population with access to electricity,World Bank,Indicator,Y,Y,USD,Country,,Annually,Y,No Issue,
+2.13,TT014,Percentage of seats held by women in national parliament,UNDESA MDGs,Indicator,Y,Y,Percentage,Country,,Annually,Y,No Data,Luis: I don't believe this indicator is relevant for the context of humanitarian response. Will follow-up.
+3.1,O,Table 3: OPERATIONAL DATA (per crisis),,,,,,,,,,,
+3.2,OH,Humanitarian Profile,,,,,,,,,,,
+3.1,OH010,# of people in need,HCT/OCHA,Indicator,N,N,,,,,,Request List,
+3.1,OH020,# of people targetted for assistance,HCT/OCHA,Indicator,N,N,,,,,,Request List,
+3.1,OH030,# of people reached ,HCT/OCHA,Indicator,N,N,,,,,,Request List,
+3.1,OH040,# of IDPs,IOM/UNHCR,Indicator,N,N,,,,,,Request List,
+3.1,OH050,# of people in camps,UNHCR,Indicator,N,N,,,,,,Request List,
+3.1,OH060,# of refugees ,UNHCR,Indicator,N,N,,,,,,Request List,
+3.1,OH070,# of returnees,UNHCR,Indicator,N,N,,,,,,Request List,
+3.2,OC,Community Operations,,,,,,,,,,,
+3.2,,# of organizations working ,OCHA,Indicator,N,N,,,,,,Request List,
+3.2,,# of clusters activated ,OCHA,Indicator,N,N,,,,,,Request List,
+1.3,RW001,Number of Reports in ReliefWeb,ReliefWeb,Indicator,Y,N,Number,Country,,,,No Issue,
+1.3,RW002,Number of Disasters,ReliefWeb,Indicator,Y,N,Number,Country,,,,No Issue,
+3.2,,# of vacancies ,ReliefWeb,Indicator,N,N,,,,,,Request List,There is a limitation with the API: it only provides the vacancies that are **currently** open. So we do not have a historic perspective of what is going on.
+2.13,TT032,Total number of UN peacekeepers,DPKO,Indicator,Y,N,Number,Country,,,,No Data,
+4.1,OG,CODs,,,,,,,,,,,
+4.1,OG010,"COD.Administrative Boundaries (level 0, 1, 2, etc)",COD Registry,GIS Data,Y,N,GIS data,Location,,Annually/As needed,N,No Issue,"Currently only available in HDX for 3 pilot countries, at varying degrees of quality"
+4.1,OG020,COD.Populated Places (settlements),COD Registry,GIS Data,Y,N,GIS data,Location,,Annually/As needed,N,No Issue,"Currently only available in HDX for 3 pilot countries, at varying degrees of quality"
+4.1,OG030,"COD.Transportation Networks (roads, ports, etc)",COD Registry,GIS Data,Y,N,GIS data,Location,,Annually/As needed,N,No Issue,"Currently only available in HDX for 3 pilot countries, at varying degrees of quality"
+4.1,OG040,"COD.Hydrology (streams, water bodies, etc)",COD Registry,GIS Data,Y,N,GIS data,Location,,Annually/As needed,N,No Issue,"Currently only available in HDX for 3 pilot countries, at varying degrees of quality"
+4.1,OG050,"COD.Hypsography (elevation models, contours)",COD Registry,GIS Data,Y,N,GIS data,Location,,Annually/As needed,N,No Issue,"Currently only available in HDX for 3 pilot countries, at varying degrees of quality"
+4.1,OG060,COD.Population Statistics,COD Registry,Indicator,Y,N,Number,Location,,Annually/As needed,Y,No Issue,"Currently only available in HDX for 3 pilot countries, at varying degrees of quality"
+5.1,F,Table 4: HUMANITARIAN FUNDING [RESOURCE ALLOCATION],,,,,,,,,,,
+5.1,FY,Humanitarian financing indicators per annum,,,,,,Crisis,,,,,
+5.1,FY010,Cross-Appeal: Amount Requested (Original),FTS - report C,Indicator,Y,N,USD,Appeal,,Monthly,Y,No Issue,
+5.1,FY020,Cross-Appeal: Amount Requested (Revised),FTS - report C,Indicator,Y,N,USD,Appeal,,Monthly,Y,No Issue,
+5.1,FY040,Cross-Appeal: Amount Received,FTS - report D,Indicator,Y,N,USD,Appeal,,Monthly,Y,No Issue,USD committed/contributed
+5.1,FY190,Cross-Appeal: Amount Received By NGOs,FTS query,Indicator,Y,N,USD,LineItem,,Monthly,Y,No Issue,
+5.1,FY200,Cross-Appeal: Amount Received By Private Orgs. & Foundations,FTS query,Indicator,Y,N,USD,LineItem,,Monthly,Y,No Issue,
+5.1,FY210,         Cross-Appeal: Amount Received By UN Agencies,FTS query,Indicator,Y,N,USD,LineItem,,Monthly,Y,No Issue,
+5.1,FY240,CERF Total Allocations,FTS query,Indicator,Y,N,USD,Appeal,,Monthly,Y,No Issue,
+5.1,FY360,CERF Country Allocation as Fraction of CERF Global Allocation,CERF,Indicator,Y,N,Percent,Appeal,,Monthly,Y,No Issue,
+5.1,FY370,CERF Country Allocation as Fraction of Total Country Funding,FTS,Indicator,Y,N,Percent,Appeal,,Monthly,Y,No Issue,
+5.1,FY380,ERF Total Allocations,FTS,Indicator,Y,N,USD,Appeal,,Monthly,Y,No Issue,RC/HC can immediately release available funds upon agreed priorities at the country level. CHFs and ERFs can be allocated to NGOs. The majority of ERF recipients are NGO partners.
+5.1,FY500,ERF Country Allocation as Fraction of ERF Global Allocation,FTS,Indicator,Y,N,Percent,Appeal,,Monthly,Y,No Issue,ERF is creating a new project tracking system
+5.1,FY510,ERF Country Allocation as Fraction of Total Country Funding,FTS,Indicator,Y,N,Percent,Appeal,,Monthly,Y,No Issue,
+5.1,FY520,CHF Total Allocations,FTS,Indicator,Y,N,USD,Appeal,,Monthly,Y,No Issue,
+5.1,FY540,CHF Country Allocation as Fraction of CHF Global Allocation,FTS,Indicator,Y,N,Percent,Appeal,,Monthly,Y,No Issue,
+5.1,FY550,CHF Country Allocation as Fraction of Total Country Funding,FTS,Indicator,Y,N,Percent,Appeal,,Monthly,Y,No Issue,
+5.1,FY620,Total Country Pooled Fund Allocations,FTS,Indicator,Y,N,USD,Appeal,,Monthly,Y,No Issue,
+5.1,FY630,Total Country Humanitarian Funding Received,FTS,Indicator,Y,N,USD,Appeal,,Monthly,Y,No Issue,
+5.1,FN,National humanitarian funding indicators,,,,,,,,,,,
+5.1,FA,Humanitarian financing indicators by appeal,,,,,,,,,,,
+5.1,FA010,CAP Amount Required (Revised),FTS - report D,Indicator,Y,N,USD,Appeal,,Twice yearly,Y,No Issue,
+5.1,FA140,CAP Amount Received,FTS - report D,Indicator,Y,N,USD,Appeal,,Twice yearly,Y,No Issue,USD committed/contributed
