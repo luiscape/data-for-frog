@@ -42,6 +42,7 @@ final_value <- subset(final_value, final_value$region == focus_countries)
 write.csv(final_dataset, 'frog-data/dataset.csv', row.names = F)
 write.csv(final_indicator, 'frog-data/indicator.csv', row.names = F)
 write.csv(final_value, 'frog-data/value.csv', row.names = F)
+write.csv(final_value_all, 'frog-data/value_all.csv', row.names = F)
 
 
 # Storing data in a database.
