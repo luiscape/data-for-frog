@@ -2,22 +2,24 @@
 
 **NOTE:** This data is for working and demonstration purposes only. It should note be trusted as authoritative data or alike. For more information get in touch with the HDX team [here](http://docs.hdx.rwlabs.org/get-involved/).
 
-The dataset attached contains **129** indicators from **~20** sources. The files are organized as follows:
+Here you can find **153** indicators from **~23** sources that are now part of the [Common Humanitarian Dataset](http://docs.hdx.rwlabs.org/project-details/analytics/common-humanitarian-dataset/). The folder [frog-data]() contains data in two formats: CSV and SQLite. The data is organized as follows: 
 
-- value.csv
-- indicator.csv
-- dataset.csv
+- CSV
+  - value.csv
+  - indicator.csv
+  - dataset.csv
+  - denorm_data.csv
 
-All of them are compressed within a ZIP file (data.zip). The data is also available as a SQLite database (db.sqlite).
-
-[The files above contain data only for the focus countries (Colombia, Yemen, and Kenya). All value data is available in the table `value_all` table.]
+- SQLite
+  - cps_model_db.sqlite (3 tables like the CSV files above, value, indicator, and dataset)
+  - denormalized_db.sqlite (single flat table)
 
 
 Description of Files
 --------------------
-You can find prepared data in the `frog-data` folder. Here are the four files you find there with their respective descriptions:
+You can find prepared data in the `frog_data` folder. Here are the four files you find there with their respective descriptions:
 
-- **value.csv:** Value has the actual data there. There are four fields in this file:
+- **value.csv:** Value contains the actual observational data. There are 7 fields in this file:
   - dsID: Unique identifier of the "source" of the data.
   - region: The country / territory the data is about.
   - indID: The unique ID of the indicator in our data model.
@@ -37,18 +39,4 @@ You can find prepared data in the `frog-data` folder. Here are the four files yo
   - last_scraped: The last time the data has been scraped.
   - name: The long name of the source.
 
-
-UNHCR Data
-----------
-UNHCR data can be found in the `unhcr-data`. The UNHCR data isn't merged in the database above because it contains a different structure than the indicators we are working above. Right now it doesn't fit the data-model used. But the data-model will evolve and adapt to this data.
-
-The single most important difference is that UNHCR data uses *country pairs* as unique identifiers of each record. That is, a refugee comes from a country and goes to a country. That pair identifies a record. Our data-model uses single countries as identifiers of records. That is, Kenya as an X poverty rate as of year 2013.
-
-There are two files in the UNHCR dataset:
-
-- **unhcr-refugee-data.csv**
-- **unhcr-refugee-countries.csv**
-
-The fields are self-explanatory.
-
-
+**Note:** UNHCR data is not included in these files as it doesn't quite fit the data-model yet. (It isn't on CPS).
