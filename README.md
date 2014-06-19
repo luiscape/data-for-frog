@@ -40,3 +40,48 @@ You can find prepared data in the `frog_data` folder. Here are the four files yo
   - name: The long name of the source.
 
 **Note:** UNHCR data is not included in these files as it doesn't quite fit the data-model yet. (It isn't on CPS).
+
+
+
+API
+---
+You can also access the denormalized database using a RESTful interface in this link: 
+
+Here is a query example: http://www.databeam.org/luiscape/local/data-for-api.json?column=indid&api_key=api-key
+
+Result: 
+```json
+[
+  {
+    "dsid": "acled",
+    "indid": "PVX040",
+    "region": "SSD",
+    "period": "1999",
+    "value": "224",
+    "is_number": "0",
+    "source": "http://www.acleddata.com/data/types-and-groups/",
+    "indicator_name": "Incidence of Conflict",
+    "units": "incidents per year",
+    "last_updated": "",
+    "last_scraped": "2014-06-15T19:03:08.535497",
+    "source_name": "ACLED (Armed conflict location and event dataset)"
+  },
+  {
+    "dsid": "acled",
+    "indid": "PVX040",
+    "region": "GNB",
+    "period": "2002",
+    "value": "10",
+    "is_number": "0",
+    "source": "http://www.acleddata.com/data/types-and-groups/",
+    "indicator_name": "Incidence of Conflict",
+    "units": "incidents per year",
+    "last_updated": "",
+    "last_scraped": "2014-06-15T19:03:08.535497",
+    "source_name": "ACLED (Armed conflict location and event dataset)"
+  }, ...
+```
+
+You will need an API key to use that. Reach out to me if you are interested in using the API.
+
+API created using [DataBeam](http://databeam.org).
