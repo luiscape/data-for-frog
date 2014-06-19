@@ -79,10 +79,7 @@ write.csv(zValue, 'frog_data/csv/value.csv', row.names = F)
 # Storing in a single, flat table.
 db <- dbConnect(SQLite(), dbname="frog_data/db/denormalized_db.sqlite")
 
-    dbWriteTable(db, "dataset", zDataset, row.names = FALSE, overwrite = TRUE)
-    dbWriteTable(db, "indicator", zIndicator, row.names = FALSE, overwrite = TRUE)
-    dbWriteTable(db, "value", zValue, row.names = FALSE, overwrite = TRUE)
-    
+    dbWriteTable(db, "dataset_denorm", denorm_data, row.names = FALSE, overwrite = TRUE)
     # for testing
     # test <- dbReadTable(db, "value")
 
