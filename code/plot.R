@@ -16,9 +16,12 @@ plotIndicator <- function (region="KEN", indID="CH080", toFile=FALSE) {
   pdata <- pdata[pdata$indID==indID,]
   pdata <- pdata[with(pdata,order(indDate)),]
 
-  plot(pdata$indDate, pdata$indValue, type="b", main=unique(pdata$indicator_name), ylab=print(unique(pdata$units)), xlab="year")
+  # background should be white
+  par(bg = "white")
+
+  plot(pdata$indDate, pdata$indValue, type="b", main=unique(pdata$indicator_name), ylab=unique(pdata$units), xlab="year")
   if (toFile) {
-   dev.copy(png,paste(region,indID,".png",sep=""))
+   dev.copy(png,paste("plots/",region,indID,".png",sep=""))
       dev.off()
   }
 }
