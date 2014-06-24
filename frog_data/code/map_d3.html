@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Map</title>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      width: 100%;
+      height: 100%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Oswald', Arial;
+    }
+    #map_container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    #indicator {
+      position: absolute;
+      top: 10px;
+      left: 10px
+    }
+    .dropdown-menu {
+      height: auto;
+      max-height: 300px;
+      overflow-x: hidden;
+    }
+    #timeline {
+      position: absolute;
+      top: 10px;
+      left: 200px;
+    }
+    #indicator_title {
+      position: absolute;
+      font-size: 18px;
+      width: 100%;
+      bottom: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map_container"></div>
+  <div class="btn-group" id="indicator">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+      Select Indicators <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+    </ul>
+  </div>
+  <div class="btn-group" id="timeline">
+  </div>
+  <h1 id='indicator_title'></h1>
+  <script>
+    var dataset;
+    var indicators;
+
+    getIndicators();
+     // getDataByIndicator("FY020");
+
+    $('body').on('click', '#indicator .dropdown-menu li > a', function() {
+      $('#timeline').empty();
+      $('#indicator_title').empty().text(this.innerHTML);
+      var id = $(this).data('id');
+      // console.log(id);
+      getDataByIndicator(id);
+    });
+
+    // $('body').on('click', '#indicator .dropdown-menu li > a', function() {
+    //   $('#timeline').empty();
+    //   $('#indicator_title').empty().text(this.innerHTML);
+    //   var id = $(this).data('id');
+    //   // console.log(id);
+    //   getDataByIndicator(id);
+    // });
+
+    function getIndicators() {
+      var url = 'http://ocha.parseapp.com/getindicators';
+      $.getJSON(url)
+        .done(function(json) {
+          indicators = json;
+          // console.log(json);
+          for (var index in indicators) {
+            var one = indicators[index];
+            $('<li><a href="#" data-id="' + one.indID + '">' + one.name + '</a></li>').appendTo($('#indicator .dropdown-menu'));
+          }
+        })
+        .fail(function(jqxhr, textStatus, error) {
+          var err = textStatus + ", " + error;
+          console.log("Request Failed: " + err);
+        });
+    }
+
+    var map = new Datamap({
+      element: document.getElementById('map_container'),
+      fills: {
+        defaultFill: 'rgba(245,245,245, 1.0)'
+      },
+      geographyConfig: {
+        highlightOnHover: true,
+        popupOnHover: true
+      }
+    });
+
+    function getDataByIndicator(indid) {
+      var url = "http://ocha.parseapp.com/getdataset?indid=" + indid;
+      $.getJSON(url)
+        .done(function(json) {
+          dataset = json;
+          var arr = getYears();
+          // console.log(arr);
+          for (var index in arr) {
+            var one = arr[index];
+            $('<button type="button" class="btn btn-default">' + one + '</button>').appendTo($('#timeline'));
+          }
+          // var data = getDataByYear(2012);
+          console.log(dataset);
+        })
+        .fail(function(jqxhr, textStatus, error) {
+          var err = textStatus + ", " + error;
+          console.log("Request Failed: " + err);
+        });
+    }
+
+    function getYears() {
+      var result = [];
+      for (var index in dataset) {
+        var year = parseInt(dataset[index].period);
+        if (result.indexOf(year) == -1) {
+          result.push(year);
+        }
+      }
+      return result;
+    }
+
+    function getDataByYear(year) {
+      var result = [];
+      for (var index in dataset) {
+        var one = dataset[index];
+        if (one.period == year) {
+          result.push(one);
+        }
+      }
+      return result;
+    }
+  </script>
+</body>
+
+</html>
