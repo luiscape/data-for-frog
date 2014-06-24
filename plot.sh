@@ -12,8 +12,10 @@ HEADER='<!DOCTYPE html>\n
 <head>\n
   <meta charset="utf-8">\n
   <link rel="stylesheet" href="style.css">\n
+  <title>Kenya Indicators</title>
 </head>\n
 <body>\n
+<h1>Kenya Indicators</h1>\n
 '
 FOOTER='</body>\n
 </html>\n
