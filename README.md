@@ -45,7 +45,7 @@ You can find prepared data in the `frog_data` folder. Here are the four files yo
 
 API
 ---
-You can also access the denormalized database using a RESTful interface in this link:
+You can also access the denormalized database (limited to 1000 entires, so not the full database) using a RESTful interface in this link:
 
 Here is a query example: http://www.databeam.org/luiscape/local/data-for-api.json?column=indid&api_key=api-key
 
