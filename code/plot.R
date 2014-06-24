@@ -1,7 +1,9 @@
 # script for plotting metrics from
 
 # the indicators data
-# ind <- read.csv('frog_data/csv/denorm_data.csv')
+print("loading from CSV...")
+ind <- read.csv('frog_data/csv/denorm_data.csv')
+print("loaded")
 
 # de-factor numbers & date
 ind$indValue <- as.numeric(ind$value)
@@ -19,10 +21,19 @@ plotIndicator <- function (region="KEN", indID="CH080", toFile=FALSE) {
   # background should be white
   par(bg = "white")
 
+  # name of plot output
+  plotfn <- paste("plots/",region,"_",indID,".png", sep="")
+
+  # output to file when we're in an external Rscript
+  if (toFile) png(plotfn)
+
+  # generate plot
   plot(pdata$indDate, pdata$indValue, type="b", main=unique(pdata$indicator_name), ylab=unique(pdata$units), xlab="year")
+
+  # output to file if we're in R REPL
   if (toFile) {
-   dev.copy(png,paste("plots/",region,indID,".png",sep=""))
-      dev.off()
+#    dev.copy(png,plotfn)
+    dev.off()
   }
 }
 
@@ -33,7 +44,7 @@ plotIndicator <- function (region="KEN", indID="CH080", toFile=FALSE) {
 plotAllIndicators <- function (region="KEN") {
 ind<-ind[ind$region==region,]
 for (i in unique(ind$indID)) {
-#    print(paste('printing',i))
+    print(paste('creating plot',i))
     plotIndicator("KEN", i, TRUE)
 }
 }
