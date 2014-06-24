@@ -2,7 +2,7 @@
 
 **NOTE:** This data is for working and demonstration purposes only. It should note be trusted as authoritative data or alike. For more information get in touch with the HDX team [here](http://docs.hdx.rwlabs.org/get-involved/).
 
-Here you can find **153** indicators from **~23** sources that are now part of the [Common Humanitarian Dataset](http://docs.hdx.rwlabs.org/project-details/analytics/common-humanitarian-dataset/). The folder [frog-data]() contains data in two formats: CSV and SQLite. The data is organized as follows: 
+Here you can find **153** indicators from **~23** sources that are now part of the [Common Humanitarian Dataset](http://docs.hdx.rwlabs.org/project-details/analytics/common-humanitarian-dataset/). The folder [frog-data]() contains data in two formats: CSV and SQLite. The data is organized as follows:
 
 - CSV
   - value.csv
@@ -45,11 +45,11 @@ You can find prepared data in the `frog_data` folder. Here are the four files yo
 
 API
 ---
-You can also access the denormalized database using a RESTful interface in this link: 
+You can also access the denormalized database using a RESTful interface in this link:
 
 Here is a query example: http://www.databeam.org/luiscape/local/data-for-api.json?column=indid&api_key=api-key
 
-Result: 
+Result:
 ```json
 [
   {
@@ -85,3 +85,11 @@ Result:
 You will need an API key to use that. Reach out to me if you are interested in using the API.
 
 API created using [DataBeam](http://databeam.org).
+
+
+**Alternative API From [Parse](www.parse.com)**
+
+- Fetch all indicators:
+  [http://ocha.parseapp.com/getindicators](http://ocha.parseapp.com/getindicators)
+- Fetch dataset by indicator 'FY010':
+  [http://ocha.parseapp.com/getdataset?indid=FY010](http://ocha.parseapp.com/getdataset?indid=FY010)
