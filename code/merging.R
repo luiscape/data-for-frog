@@ -74,7 +74,7 @@ colnames(y_temp)[4] <- "source_name"
 denorm_data <- merge(zValue, x_temp, by = "indID")
 denorm_data <- merge(denorm_data, y_temp, by = "dsID")
 
-write.csv(denorm_data, 'frog_data/csv/denorm_data.csv', row.names = F)
+write.csv(zValue, 'frog_data/csv/value.csv', row.names = F)
 
 # Storing in a single, flat table.
 db <- dbConnect(SQLite(), dbname="frog_data/db/denormalized_db.sqlite")

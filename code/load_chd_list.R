@@ -8,7 +8,7 @@ write.csv(y, 'source_data/chd_list.csv', row.names = F)
 
 # loading the CHD list
 chd_list <- read.csv('source_data/chd_list.csv')
-    
+
 # Cleaning the codes. 
 colnames(chd_list)[2] <- 'indID'
 chd_list$is_code <- nchar(as.character(chd_list$indID)) >= 4
