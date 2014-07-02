@@ -81,6 +81,6 @@ db <- dbConnect(SQLite(), dbname="frog_data/db/denormalized_db.sqlite")
 
     dbWriteTable(db, "dataset_denorm", denorm_data, row.names = FALSE, overwrite = TRUE)
     # for testing
-    # test <- dbReadTable(db, "value")
+#     test <- dbReadTable(db, "dataset_denorm")
 
 dbDisconnect(db)
