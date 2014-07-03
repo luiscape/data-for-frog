@@ -11,7 +11,7 @@ final_value <- data.frame()
 # write.csv(fts_data, 'source_data/fts-value.csv', row.names = F) 
 
 # Creating a source list.
-source_list <- c('fts', 'rw', 'sw', 'op')
+source_list <- c('fts', 'rw', 'sw', 'op', 'unhcr')
 
 # Fetching and merging all data.
 for (i in 1:length(source_list)) { 
@@ -34,9 +34,24 @@ for (i in 1:length(source_list)) {
 ## Selecting only CHD data.
 # Loading the current  CHD list.
 source('code/load_chd_list.R')
-indicator_list <- as.character(chd_list$indID)
-zIndicator <- zIndicator[which(zIndicator$indID %in% indicator_list), ]
-zIndicator$in_chd <- NULL
+old_indicator_list <- as.character(chd_list$old_indID)
+new_indicator_list <- as.character(chd_list$new_indID)
+zIndicator_1 <- zIndicator[which(zIndicator$indID %in% old_indicator_list),]
+zIndicator_2 <- zIndicator[which(zIndicator$indID %in% new_indicator_list),]
+zIndicator <- rbind(zIndicator_1, zIndicator_2)
+
+
+# Cleaning old indicators
+zIndicator <- merge(zIndicator, chd_list, by.x = 'indID', by.y = 'old_indID', all.x = TRUE)
+zIndicator$indicator_name <- NULL
+zIndicator$indID <- ifelse(is.na(zIndicator$new_indID), as.character(x$indID), as.character(x$new_indID))
+zIndicator$new_indID <- NULL
+
+# Adding new codes to value table
+x <- merge(zIndicator, chd_list, by.x = 'indID', by.y = 'old_indID', all.x = TRUE)
+x$indicator_name <- NULL
+x$new_indID <- ifelse(is.na(x$new_indID), as.character(x$indID), as.character(x$new_indID))
+zValue$indID <- ifelse((zValue$indID %in% x$indID), x$new_indID, zValue$indID)
 
 
 ## Running validation tests. 
@@ -55,14 +70,16 @@ write.csv(zValue, 'frog_data/csv/value.csv', row.names = F)
 library(sqldf)
 
 db <- dbConnect(SQLite(), dbname="frog_data/db/cps_model_db.sqlite")
-
+    message('storing: dataset')
     dbWriteTable(db, "dataset", zDataset, row.names = FALSE, overwrite = TRUE)
+    message('storing: indicator')
     dbWriteTable(db, "indicator", zIndicator, row.names = FALSE, overwrite = TRUE)
+    message('storing: value')
     dbWriteTable(db, "value", zValue, row.names = FALSE, overwrite = TRUE)
     
     # for testing
     # test <- dbReadTable(db, "value")
-
+message('diconnecting')
 dbDisconnect(db)
 
 ## Creating a single flat table.
@@ -78,9 +95,9 @@ write.csv(zValue, 'frog_data/csv/value.csv', row.names = F)
 
 # Storing in a single, flat table.
 db <- dbConnect(SQLite(), dbname="frog_data/db/denormalized_db.sqlite")
-
+    message('storing: dataset_denorm')
     dbWriteTable(db, "dataset_denorm", denorm_data, row.names = FALSE, overwrite = TRUE)
     # for testing
 #     test <- dbReadTable(db, "dataset_denorm")
-
+message('diconnecting')
 dbDisconnect(db)
