@@ -2,18 +2,22 @@
 
 **NOTE:** This data is for working and demonstration purposes only. It should note be trusted as authoritative data or alike. For more information get in touch with the HDX team [here](http://docs.hdx.rwlabs.org/get-involved/).
 
-Here you can find **153** indicators from **~23** sources that are now part of the [Common Humanitarian Dataset](http://docs.hdx.rwlabs.org/project-details/analytics/common-humanitarian-dataset/). The folder [frog-data]() contains data in two formats: CSV and SQLite. The data is organized as follows:
+Here you can find **155** indicators from **24** sources that are now part of the [Common Humanitarian Dataset](http://docs.hdx.rwlabs.org/project-details/analytics/common-humanitarian-dataset/). The folder [frog-data]() contains data in two formats: CSV and SQLite. The data is organized as follows:
 
 - CSV
   - value.csv
   - indicator.csv
   - dataset.csv
-  - denorm_data.csv
+  - denorm_table.csv
 
 - SQLite
   - cps_model_db.sqlite (3 tables like the CSV files above, value, indicator, and dataset)
   - denormalized_db.sqlite (single flat table)
 
+
+Indicator Coding Scheme
+-----------------------
+We have just defined a new coding scheme for the indicators. Documentation for the new coding scheme can be seen [here](https://github.com/luiscape/data-for-frog/blob/master/chd_coding_scheme.pdf?raw=true).
 
 Description of Files
 --------------------
@@ -45,7 +49,7 @@ You can find prepared data in the `frog_data` folder. Here are the four files yo
 
 API
 ---
-You can also access the denormalized database (limited to 1000 entires, so not the full database) using a RESTful interface in this link:
+You can also access the denormalized database (limited to 1000 entires, so not the full database) using a RESTful interface in this link: http://www.databeam.org/luiscape/local/data-for-api.json
 
 Here is a query example: http://www.databeam.org/luiscape/local/data-for-api.json?column=indid&api_key=api-key
 
