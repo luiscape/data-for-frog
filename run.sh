@@ -1,1 +1,0 @@
-Rscript code/merging.R
