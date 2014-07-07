@@ -109,8 +109,7 @@
             .call(force.drag);
 
           node.append("title")
-            .append("svg:title").text(function(d) { return d.name; })
-            .text(function (d) { return d.name; });
+            .append("svg:title").text(function (d) { return d.name; });
 
           force.on("tick", function () {
               link.attr("x1", function (d) { return d.source.x; })
