@@ -31,7 +31,7 @@
         .attr("width", width)
         .attr("height", height);
 
-    d3.csv("les_mis.csv", function (error, data) {
+    d3.csv("data.csv", function (error, data) {
         //set up graph in same style as original example but empty
         graph = { "nodes": [], "links": [] };
 
@@ -108,6 +108,6 @@
         });
     });
 
-</script>        
+</script>
 </body>
 </html>
