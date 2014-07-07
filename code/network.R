@@ -85,7 +85,7 @@ makeNetwork <- function(df = NULL) {
     names(tab) <- c('source', 'size', 'grouptarget')
     df <- merge(df, tab, by = 'source', all.x = TRUE)
 return(df)
-}
+} 
 network_data <- makeNetwork(data)
 
 # writing CSV
