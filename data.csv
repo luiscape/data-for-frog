@@ -1,463 +1,463 @@
 "source","target","value","groupsource","weight","grouptarget"
-"baseline","economic",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","other",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","population",1,1,113,1
-"baseline","population",1,1,113,1
-"baseline","population",1,1,113,1
-"baseline","population",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","economic",1,1,113,1
-"baseline","education",1,1,113,1
-"baseline","education",1,1,113,1
-"baseline","education",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","logistics",1,1,113,1
-"baseline","logistics",1,1,113,1
-"baseline","logistics",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","water",1,1,113,1
-"baseline","water",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","population",1,1,113,1
-"baseline","population",1,1,113,1
-"baseline","population",1,1,113,1
-"baseline","education",1,1,113,1
-"baseline","education",1,1,113,1
-"baseline","education",1,1,113,1
-"baseline","education",1,1,113,1
-"baseline","education",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","nutrition",1,1,113,1
-"baseline","population",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","other",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","humanitarian",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","health",1,1,113,1
-"baseline","other",1,1,113,1
-"baseline","other",1,1,113,1
-"baseline","other",1,1,113,1
-"baseline","other",1,1,113,1
-"baseline","other",1,1,113,1
-"economic","GINI index",1,1,14,2
-"economic","GNI per capita, PPP ",1,1,14,2
-"economic","GNI ",1,1,14,2
-"economic","Inflation, consumer prices ",1,1,14,2
-"economic","GDP per capita, PPP ",1,1,14,2
-"economic","Age dependency ratio, young ",1,1,14,2
-"economic","Population living below $1.25 PPP per day",1,1,14,2
-"economic","Poverty headcount ratio at $1.25 a day (PPP) ",1,1,14,2
-"economic","GNI, PPP ",1,1,14,2
-"economic","Gender Inequality Index, value",1,1,14,2
-"economic","Net ODA received per capita ",1,1,14,2
-"economic","HDI Rank",1,1,14,2
-"economic","Household final consumption expenditure, PPP ",1,1,14,2
-"economic","Age dependency ratio, old ",1,1,14,2
-"education","Expected Years of Schooling (of children)",1,1,8,3
-"education","Adult literacy rate, both sexes",1,1,8,3
-"education","Adult literacy rate, both sexes",1,1,8,3
-"education","Public expenditure on education (% of GDP)",1,1,8,3
-"education","Mean years of schooling (of adults)",1,1,8,3
-"education","Total net enrolment ratio in primary education",1,1,8,3
-"education","Adult literacy rate, both sexes",1,1,8,3
-"education","Combined gross enrolment in education (both sexes)",1,1,8,3
-"funding","CAP Amount Required (Revised)",1,1,19,4
-"funding","CAP Amount Received",1,1,19,4
-"funding","Cross-Appeal: Amount Requested (Original)",1,1,19,4
-"funding","Cross-Appeal: Amount Requested (Revised)",1,1,19,4
-"funding","Cross-Appeal: Amount Received",1,1,19,4
-"funding","Cross-Appeal: Amount Received By NGOs",1,1,19,4
-"funding","Cross-Appeal: Amount Received By Private Orgs. & Foundations",1,1,19,4
-"funding","Cross-Appeal: Amount Received By UN Agencies",1,1,19,4
-"funding","CERF Total Allocations",1,1,19,4
-"funding","CERF Country Allocation as Fraction of CERF Global Allocation",1,1,19,4
-"funding","CERF Country Allocation as Fraction of Total Country Funding",1,1,19,4
-"funding","ERF Total Allocations",1,1,19,4
-"funding","ERF Country Allocation as Fraction of ERF Global Allocation",1,1,19,4
-"funding","ERF Country Allocation as Fraction of Total Country Funding",1,1,19,4
-"funding","CHF Total Allocations",1,1,19,4
-"funding","CHF Country Allocation as Fraction of CHF Global Allocation",1,1,19,4
-"funding","CHF Country Allocation as Fraction of Total Country Funding",1,1,19,4
-"funding","Total Country Pooled Fund Allocations",1,1,19,4
-"funding","Total Country Humanitarian Funding Received",1,1,19,4
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","baseline",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"global","operational",1,1,154,5
-"health","Routine EPI vaccines financed by government",1,1,45,6
-"health","Children under five mortality rate per 1,000 live births",1,1,45,6
-"health","Under-five mortality (both sexes combined) by major area, region and country, 1950-2100",1,1,45,6
-"health","Antenatal care coverage - at least one visit (in the three years preceding the survey)  - Rural",1,1,45,6
-"health","Children 1 year old immunized against measles",1,1,45,6
-"health","Number of infant deaths",1,1,45,6
-"health","Mortality rate, adult, male ",1,1,45,6
-"health","Births attended by skilled health personnel (in the three years preceding the survey)  - Rural",1,1,45,6
-"health","Births attended by skilled health personnel (in the five years preceding the survey)  - Rural",1,1,45,6
-"health","Infant mortality rate (both sexes combined) by major area, region and country, 1950-2100",1,1,45,6
-"health","Maternal mortality ratio",1,1,45,6
-"health","Maternal mortality ratio per 100,000 live births",1,1,45,6
-"health","Crude death rate by major area, region and country, 1950-2100",1,1,45,6
-"health","Total sexual violence at the national level, number of police-recorded offences",1,1,45,6
-"health","Prevalence of HIV, total ",1,1,45,6
-"health","Antenatal care coverage - at least one visit (in the two years preceding the survey)  - Rural",1,1,45,6
-"health","Malaria - number of reported confirmed cases",1,1,45,6
-"health","Antenatal care coverage - at least one visit (in the two years preceding the survey)  - Urban",1,1,45,6
-"health","Antenatal care coverage - at least one visit (in the three years preceding the survey)  - Urban",1,1,45,6
-"health","Births attended by skilled health personnel (in the two years preceding the survey)  - Rural",1,1,45,6
-"health","Children aged <5 years with fever who received treatment with any antimalarial  - Total",1,1,45,6
-"health","Children aged <5 years with fever who received treatment with any antimalarial  - Rural",1,1,45,6
-"health","Children aged <5 years with fever who received treatment with any antimalarial  - Urban",1,1,45,6
-"health","Births attended by skilled health personnel (in the two years preceding the survey)  - Urban",1,1,45,6
-"health","Number of suspected meningitis cases reported",1,1,45,6
-"health","Number of suspected meningitis deaths reported",1,1,45,6
-"health","Number of meningitis epidemic districts",1,1,45,6
-"health","Number of reported cases of cholera",1,1,45,6
-"health","Life expectancy at birth (both sexes combined) by major area, region and country, 1950-2100",1,1,45,6
-"health","Life expectancy at birth (both sexes combined) by major area, region and country, 1950-2100",1,1,45,6
-"health","Life expectancy at birth (both sexes combined) by major area, region and country, 1950-2100",1,1,45,6
-"health","Deaths (both sexes combined) by major area, region and country, 1950-2100",1,1,45,6
-"health","Mortality rate, adult, female ",1,1,45,6
-"health","Estimated number of malaria deaths",1,1,45,6
-"health","Births attended by skilled health personnel (in the five years preceding the survey)  - Urban",1,1,45,6
-"health","Share of women employed in the nonagricultural sector ",1,1,45,6
-"health","Antenatal care coverage - at least four visits (in the three years preceding the survey)  - Rural",1,1,45,6
-"health","Births attended by skilled health personnel (in the three years preceding the survey)  - Urban",1,1,45,6
-"health","Antenatal care coverage - at least four visits (in the three years preceding the survey)  - Urban",1,1,45,6
-"health","Antenatal care coverage - at least four visits (in the five years preceding the survey)  - Urban",1,1,45,6
-"health","Estimated number of malaria cases",1,1,45,6
-"health","Antenatal care coverage - at least four visits (in the five years preceding the survey)  - Rural",1,1,45,6
-"health","Number of reported deaths from cholera",1,1,45,6
-"health","Cholera case fatality rate",1,1,45,6
-"health","Malaria - number of reported deaths",1,1,45,6
-"humanitarian","Number of Reports",1,1,16,7
-"humanitarian","Number of Disasters",1,1,16,7
-"humanitarian","Number of disasters",1,1,16,7
-"humanitarian","People killed in disasters",1,1,16,7
-"humanitarian","People affected by disasters",1,1,16,7
-"humanitarian","Total cost of damage done by disasters",1,1,16,7
-"humanitarian","Incidence of Conflict",1,1,16,7
-"humanitarian","Number of People in Need",1,1,16,7
-"humanitarian","Number of People Targeted for Assistance",1,1,16,7
-"humanitarian","Number of People Reached",1,1,16,7
-"humanitarian","Total number of people affected by disasters",1,1,16,7
-"humanitarian","Impact of natural disasters: number of deaths",1,1,16,7
-"humanitarian","GNA Vulnerability Index",1,1,16,7
-"humanitarian","GNA Crisis Index",1,1,16,7
-"humanitarian","People made homeless by disasters",1,1,16,7
-"humanitarian","People injured in disasters",1,1,16,7
-"logistics","Rail lines ",1,1,3,8
-"logistics","Roads, total network ",1,1,3,8
-"logistics","Number of airports",1,1,3,8
-"nutrition","Children aged <5 years overweight  - Male",1,1,13,9
-"nutrition","Children aged <5 years overweight  - Female",1,1,13,9
-"nutrition","Children aged <5 years stunted  - Both sexes",1,1,13,9
-"nutrition","Children aged <5 years stunted  - Female",1,1,13,9
-"nutrition","Children aged <5 years stunted  - Male",1,1,13,9
-"nutrition","Children aged <5 years overweight  - Both sexes",1,1,13,9
-"nutrition","Children aged <5 years wasted for age  - Male",1,1,13,9
-"nutrition","Prevalence of undernourishment ",1,1,13,9
-"nutrition","Children aged <5 years wasted for age  - Both sexes",1,1,13,9
-"nutrition","Children aged <5 years wasted for age  - Female",1,1,13,9
-"nutrition","Population undernourished",1,1,13,9
-"nutrition","Children under 5 moderately or severely underweight",1,1,13,9
-"nutrition","Population undernourished",1,1,13,9
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","funding",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","humanitarian",1,1,41,10
-"operational","humanitarian",1,1,41,10
-"operational","humanitarian",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"operational","protection",1,1,41,10
-"other","Fixed-telephone subscriptions per 100 inhabitants",1,1,7,11
-"other","Mobile-cellular subscriptions per 100 inhabitants",1,1,7,11
-"other","Mobile cellular subscriptions ",1,1,7,11
-"other","Seats held by women in national parliament",1,1,7,11
-"other","Internet users ",1,1,7,11
-"other","Logistics performance index: Overall ",1,1,7,11
-"other","Access to electricity ",1,1,7,11
-"population","Median age by major area, region and country, 1950-2100",1,1,8,12
-"population","Total population (both sexes combined) by major area, region and country, annually for 1950-2100",1,1,8,12
-"population","Population in urban agglomerations of more than 1 million",1,1,8,12
-"population","Average annual rate of population change by major area, region and country, 1950-2100",1,1,8,12
-"population","Population growth ",1,1,8,12
-"population","Population density by major area, region and country, 1950-2100",1,1,8,12
-"population","Percentage of Population Residing in Urban Areas by Major Area, Region and Country, 1950-2050",1,1,8,12
-"population","International migrant stock ",1,1,8,12
-"protection","Number of IDPs",1,1,19,13
-"protection","Number of People in Camps",1,1,19,13
-"protection","Number of People of Concern by Country of Origin",1,1,19,13
-"protection","Number of People of Concern by Country of Residence",1,1,19,13
-"protection","Internally displaced by Country of Residence",1,1,19,13
-"protection","Internally displaced by Country of Origin",1,1,19,13
-"protection","Returned IDPs by Country of Origin",1,1,19,13
-"protection","Returned IDPs by Country of Residence",1,1,19,13
-"protection","Others of concern by Country of Origin",1,1,19,13
-"protection","Others of concern by Country of Residence",1,1,19,13
-"protection","Returned refugees by Country of Origin",1,1,19,13
-"protection","Returned refugees by Country of Residence",1,1,19,13
-"protection","Asylum seekers by Country of Origin",1,1,19,13
-"protection","Asylum seekers by Country of Residence",1,1,19,13
-"protection","Refugees by Country of Residence",1,1,19,13
-"protection","Refugees by Country of Origin",1,1,19,13
-"protection","Stateless by Country of Residence",1,1,19,13
-"protection","Stateless by Country of Origin",1,1,19,13
-"protection","Total Number of People of Concern",1,1,19,13
-"water","Proportion of the population using improved sanitation facilities",1,1,2,14
-"water","Proportion of the population using improved drinking water sources",1,1,2,14
+"Access to electricity ","other",1,1,NA,NA
+"Adult literacy rate, both sexes","education",1,1,NA,NA
+"Adult literacy rate, both sexes","education",1,1,NA,NA
+"Adult literacy rate, both sexes","education",1,1,NA,NA
+"Age dependency ratio, old ","economic",1,1,NA,NA
+"Age dependency ratio, young ","economic",1,1,NA,NA
+"Antenatal care coverage - at least four visits (in the five years preceding the survey)  - Rural","health",1,1,NA,NA
+"Antenatal care coverage - at least four visits (in the five years preceding the survey)  - Urban","health",1,1,NA,NA
+"Antenatal care coverage - at least four visits (in the three years preceding the survey)  - Rural","health",1,1,NA,NA
+"Antenatal care coverage - at least four visits (in the three years preceding the survey)  - Urban","health",1,1,NA,NA
+"Antenatal care coverage - at least one visit (in the three years preceding the survey)  - Rural","health",1,1,NA,NA
+"Antenatal care coverage - at least one visit (in the three years preceding the survey)  - Urban","health",1,1,NA,NA
+"Antenatal care coverage - at least one visit (in the two years preceding the survey)  - Rural","health",1,1,NA,NA
+"Antenatal care coverage - at least one visit (in the two years preceding the survey)  - Urban","health",1,1,NA,NA
+"Asylum seekers by Country of Origin","protection",1,1,NA,NA
+"Asylum seekers by Country of Residence","protection",1,1,NA,NA
+"Average annual rate of population change by major area, region and country, 1950-2100","population",1,1,NA,NA
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"baseline","global",1,1,113,1
+"Births attended by skilled health personnel (in the five years preceding the survey)  - Rural","health",1,1,NA,NA
+"Births attended by skilled health personnel (in the five years preceding the survey)  - Urban","health",1,1,NA,NA
+"Births attended by skilled health personnel (in the three years preceding the survey)  - Rural","health",1,1,NA,NA
+"Births attended by skilled health personnel (in the three years preceding the survey)  - Urban","health",1,1,NA,NA
+"Births attended by skilled health personnel (in the two years preceding the survey)  - Rural","health",1,1,NA,NA
+"Births attended by skilled health personnel (in the two years preceding the survey)  - Urban","health",1,1,NA,NA
+"CAP Amount Received","funding",1,1,NA,NA
+"CAP Amount Required (Revised)","funding",1,1,NA,NA
+"CERF Country Allocation as Fraction of CERF Global Allocation","funding",1,1,NA,NA
+"CERF Country Allocation as Fraction of Total Country Funding","funding",1,1,NA,NA
+"CERF Total Allocations","funding",1,1,NA,NA
+"CHF Country Allocation as Fraction of CHF Global Allocation","funding",1,1,NA,NA
+"CHF Country Allocation as Fraction of Total Country Funding","funding",1,1,NA,NA
+"CHF Total Allocations","funding",1,1,NA,NA
+"Children 1 year old immunized against measles","health",1,1,NA,NA
+"Children aged <5 years overweight  - Both sexes","nutrition",1,1,NA,NA
+"Children aged <5 years overweight  - Female","nutrition",1,1,NA,NA
+"Children aged <5 years overweight  - Male","nutrition",1,1,NA,NA
+"Children aged <5 years stunted  - Both sexes","nutrition",1,1,NA,NA
+"Children aged <5 years stunted  - Female","nutrition",1,1,NA,NA
+"Children aged <5 years stunted  - Male","nutrition",1,1,NA,NA
+"Children aged <5 years wasted for age  - Both sexes","nutrition",1,1,NA,NA
+"Children aged <5 years wasted for age  - Female","nutrition",1,1,NA,NA
+"Children aged <5 years wasted for age  - Male","nutrition",1,1,NA,NA
+"Children aged <5 years with fever who received treatment with any antimalarial  - Rural","health",1,1,NA,NA
+"Children aged <5 years with fever who received treatment with any antimalarial  - Total","health",1,1,NA,NA
+"Children aged <5 years with fever who received treatment with any antimalarial  - Urban","health",1,1,NA,NA
+"Children under 5 moderately or severely underweight","nutrition",1,1,NA,NA
+"Children under five mortality rate per 1,000 live births","health",1,1,NA,NA
+"Cholera case fatality rate","health",1,1,NA,NA
+"Combined gross enrolment in education (both sexes)","education",1,1,NA,NA
+"Cross-Appeal: Amount Received","funding",1,1,NA,NA
+"Cross-Appeal: Amount Received By NGOs","funding",1,1,NA,NA
+"Cross-Appeal: Amount Received By Private Orgs. & Foundations","funding",1,1,NA,NA
+"Cross-Appeal: Amount Received By UN Agencies","funding",1,1,NA,NA
+"Cross-Appeal: Amount Requested (Original)","funding",1,1,NA,NA
+"Cross-Appeal: Amount Requested (Revised)","funding",1,1,NA,NA
+"Crude death rate by major area, region and country, 1950-2100","health",1,1,NA,NA
+"Deaths (both sexes combined) by major area, region and country, 1950-2100","health",1,1,NA,NA
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"economic","baseline",1,1,14,2
+"education","baseline",1,1,8,3
+"education","baseline",1,1,8,3
+"education","baseline",1,1,8,3
+"education","baseline",1,1,8,3
+"education","baseline",1,1,8,3
+"education","baseline",1,1,8,3
+"education","baseline",1,1,8,3
+"education","baseline",1,1,8,3
+"ERF Country Allocation as Fraction of ERF Global Allocation","funding",1,1,NA,NA
+"ERF Country Allocation as Fraction of Total Country Funding","funding",1,1,NA,NA
+"ERF Total Allocations","funding",1,1,NA,NA
+"Estimated number of malaria cases","health",1,1,NA,NA
+"Estimated number of malaria deaths","health",1,1,NA,NA
+"Expected Years of Schooling (of children)","education",1,1,NA,NA
+"Fixed-telephone subscriptions per 100 inhabitants","other",1,1,NA,NA
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"funding","operational",1,1,19,4
+"GDP per capita, PPP ","economic",1,1,NA,NA
+"Gender Inequality Index, value","economic",1,1,NA,NA
+"GINI index","economic",1,1,NA,NA
+"GNA Crisis Index","humanitarian",1,1,NA,NA
+"GNA Vulnerability Index","humanitarian",1,1,NA,NA
+"GNI ","economic",1,1,NA,NA
+"GNI per capita, PPP ","economic",1,1,NA,NA
+"GNI, PPP ","economic",1,1,NA,NA
+"HDI Rank","economic",1,1,NA,NA
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"health","baseline",1,1,45,6
+"Household final consumption expenditure, PPP ","economic",1,1,NA,NA
+"humanitarian","baseline",1,1,16,7
+"humanitarian","operational",1,1,16,7
+"humanitarian","operational",1,1,16,7
+"humanitarian","operational",1,1,16,7
+"humanitarian","baseline",1,1,16,7
+"humanitarian","baseline",1,1,16,7
+"humanitarian","baseline",1,1,16,7
+"humanitarian","baseline",1,1,16,7
+"humanitarian","baseline",1,1,16,7
+"humanitarian","baseline",1,1,16,7
+"humanitarian","baseline",1,1,16,7
+"humanitarian","baseline",1,1,16,7
+"humanitarian","baseline",1,1,16,7
+"humanitarian","baseline",1,1,16,7
+"humanitarian","baseline",1,1,16,7
+"humanitarian","baseline",1,1,16,7
+"Impact of natural disasters: number of deaths","humanitarian",1,1,NA,NA
+"Incidence of Conflict","humanitarian",1,1,NA,NA
+"Infant mortality rate (both sexes combined) by major area, region and country, 1950-2100","health",1,1,NA,NA
+"Inflation, consumer prices ","economic",1,1,NA,NA
+"Internally displaced by Country of Origin","protection",1,1,NA,NA
+"Internally displaced by Country of Residence","protection",1,1,NA,NA
+"International migrant stock ","population",1,1,NA,NA
+"Internet users ","other",1,1,NA,NA
+"Life expectancy at birth (both sexes combined) by major area, region and country, 1950-2100","health",1,1,NA,NA
+"Life expectancy at birth (both sexes combined) by major area, region and country, 1950-2100","health",1,1,NA,NA
+"Life expectancy at birth (both sexes combined) by major area, region and country, 1950-2100","health",1,1,NA,NA
+"logistics","baseline",1,1,3,8
+"logistics","baseline",1,1,3,8
+"logistics","baseline",1,1,3,8
+"Logistics performance index: Overall ","other",1,1,NA,NA
+"Malaria - number of reported confirmed cases","health",1,1,NA,NA
+"Malaria - number of reported deaths","health",1,1,NA,NA
+"Maternal mortality ratio","health",1,1,NA,NA
+"Maternal mortality ratio per 100,000 live births","health",1,1,NA,NA
+"Mean years of schooling (of adults)","education",1,1,NA,NA
+"Median age by major area, region and country, 1950-2100","population",1,1,NA,NA
+"Mobile cellular subscriptions ","other",1,1,NA,NA
+"Mobile-cellular subscriptions per 100 inhabitants","other",1,1,NA,NA
+"Mortality rate, adult, female ","health",1,1,NA,NA
+"Mortality rate, adult, male ","health",1,1,NA,NA
+"Net ODA received per capita ","economic",1,1,NA,NA
+"Number of airports","logistics",1,1,NA,NA
+"Number of disasters","humanitarian",1,1,NA,NA
+"Number of Disasters","humanitarian",1,1,NA,NA
+"Number of IDPs","protection",1,1,NA,NA
+"Number of infant deaths","health",1,1,NA,NA
+"Number of meningitis epidemic districts","health",1,1,NA,NA
+"Number of People in Camps","protection",1,1,NA,NA
+"Number of People in Need","humanitarian",1,1,NA,NA
+"Number of People of Concern by Country of Origin","protection",1,1,NA,NA
+"Number of People of Concern by Country of Residence","protection",1,1,NA,NA
+"Number of People Reached","humanitarian",1,1,NA,NA
+"Number of People Targeted for Assistance","humanitarian",1,1,NA,NA
+"Number of reported cases of cholera","health",1,1,NA,NA
+"Number of reported deaths from cholera","health",1,1,NA,NA
+"Number of Reports","humanitarian",1,1,NA,NA
+"Number of suspected meningitis cases reported","health",1,1,NA,NA
+"Number of suspected meningitis deaths reported","health",1,1,NA,NA
+"nutrition","baseline",1,1,13,9
+"nutrition","baseline",1,1,13,9
+"nutrition","baseline",1,1,13,9
+"nutrition","baseline",1,1,13,9
+"nutrition","baseline",1,1,13,9
+"nutrition","baseline",1,1,13,9
+"nutrition","baseline",1,1,13,9
+"nutrition","baseline",1,1,13,9
+"nutrition","baseline",1,1,13,9
+"nutrition","baseline",1,1,13,9
+"nutrition","baseline",1,1,13,9
+"nutrition","baseline",1,1,13,9
+"nutrition","baseline",1,1,13,9
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"operational","global",1,1,41,10
+"other","baseline",1,1,7,11
+"other","baseline",1,1,7,11
+"other","baseline",1,1,7,11
+"other","baseline",1,1,7,11
+"other","baseline",1,1,7,11
+"other","baseline",1,1,7,11
+"other","baseline",1,1,7,11
+"Others of concern by Country of Origin","protection",1,1,NA,NA
+"Others of concern by Country of Residence","protection",1,1,NA,NA
+"People affected by disasters","humanitarian",1,1,NA,NA
+"People injured in disasters","humanitarian",1,1,NA,NA
+"People killed in disasters","humanitarian",1,1,NA,NA
+"People made homeless by disasters","humanitarian",1,1,NA,NA
+"Percentage of Population Residing in Urban Areas by Major Area, Region and Country, 1950-2050","population",1,1,NA,NA
+"population","baseline",1,1,8,12
+"population","baseline",1,1,8,12
+"population","baseline",1,1,8,12
+"population","baseline",1,1,8,12
+"population","baseline",1,1,8,12
+"population","baseline",1,1,8,12
+"population","baseline",1,1,8,12
+"population","baseline",1,1,8,12
+"Population density by major area, region and country, 1950-2100","population",1,1,NA,NA
+"Population growth ","population",1,1,NA,NA
+"Population in urban agglomerations of more than 1 million","population",1,1,NA,NA
+"Population living below $1.25 PPP per day","economic",1,1,NA,NA
+"Population undernourished","nutrition",1,1,NA,NA
+"Population undernourished","nutrition",1,1,NA,NA
+"Poverty headcount ratio at $1.25 a day (PPP) ","economic",1,1,NA,NA
+"Prevalence of HIV, total ","health",1,1,NA,NA
+"Prevalence of undernourishment ","nutrition",1,1,NA,NA
+"Proportion of the population using improved drinking water sources","water",1,1,NA,NA
+"Proportion of the population using improved sanitation facilities","water",1,1,NA,NA
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"protection","operational",1,1,19,13
+"Public expenditure on education (% of GDP)","education",1,1,NA,NA
+"Rail lines ","logistics",1,1,NA,NA
+"Refugees by Country of Origin","protection",1,1,NA,NA
+"Refugees by Country of Residence","protection",1,1,NA,NA
+"Returned IDPs by Country of Origin","protection",1,1,NA,NA
+"Returned IDPs by Country of Residence","protection",1,1,NA,NA
+"Returned refugees by Country of Origin","protection",1,1,NA,NA
+"Returned refugees by Country of Residence","protection",1,1,NA,NA
+"Roads, total network ","logistics",1,1,NA,NA
+"Routine EPI vaccines financed by government","health",1,1,NA,NA
+"Seats held by women in national parliament","other",1,1,NA,NA
+"Share of women employed in the nonagricultural sector ","health",1,1,NA,NA
+"Stateless by Country of Origin","protection",1,1,NA,NA
+"Stateless by Country of Residence","protection",1,1,NA,NA
+"Total cost of damage done by disasters","humanitarian",1,1,NA,NA
+"Total Country Humanitarian Funding Received","funding",1,1,NA,NA
+"Total Country Pooled Fund Allocations","funding",1,1,NA,NA
+"Total net enrolment ratio in primary education","education",1,1,NA,NA
+"Total number of people affected by disasters","humanitarian",1,1,NA,NA
+"Total Number of People of Concern","protection",1,1,NA,NA
+"Total population (both sexes combined) by major area, region and country, annually for 1950-2100","population",1,1,NA,NA
+"Total sexual violence at the national level, number of police-recorded offences","health",1,1,NA,NA
+"Under-five mortality (both sexes combined) by major area, region and country, 1950-2100","health",1,1,NA,NA
+"water","baseline",1,1,2,14
+"water","baseline",1,1,2,14
