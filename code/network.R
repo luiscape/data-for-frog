@@ -81,6 +81,9 @@ makeNetwork <- function(df = NULL) {
     df$groupsource <- 1
     df$grouptarget <- 1
     names(df) <- c('source', 'target', 'value', 'groupsource', 'grouptarget')
+    tab <- data.frame(table(network_data$source))
+    names(tab) <- c('source', 'size')
+    df <- merge(df, tab, by = 'source', all.x = TRUE)
 return(df)
 }
 network_data <- makeNetwork(data)
