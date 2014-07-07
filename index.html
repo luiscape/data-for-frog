@@ -18,25 +18,26 @@
 }
 
 </style>
-<body>
+<body class="container">
 <div class="container">
-  <h2>Network Mapping of Indicators</h2>
+  <h1>Network Mapping of Indicators</h1>
+
   <p>In this experiment we are using the <a href="https://github.com/luiscape/data-for-frog/blob/gh-pages/chd_coding_scheme.pdf">new CHD coding scheme</a> to create a network map that represents the relationship among indicators. Each color represents a "level" in the CHD coding scheme.</p>
   <p>
     The levels follow this order: List (Global or Local) >> Class (Operational or Baseline) >> Topic (e.g. Health, Logistics) >> Indicator code
   </p>
 </div>
-<div>
+
   <script src="http://d3js.org/d3.v3.js"></script>
   <script>
-      var width = 960,
-          height = 500;
+      var width = 800,
+          height = 450;
 
       var color = d3.scale.category20();
 
       var force = d3.layout.force()
-          .charge(-120)
-          .linkDistance(30)
+          .charge(-50)
+          .linkDistance(70)
           .size([width, height]);
 
       var svg = d3.select("body").append("svg")
@@ -53,6 +54,7 @@
           data.forEach(function (d) {
               graph.nodes.push({ "name": d.source, "group": +d.groupsource });
               graph.nodes.push({ "name": d.target, "group": +d.grouptarget });
+              // graph.nodes.push({ "source": d.source, "size": +d.size });
 
               graph.links.push({ "source": d.source, "target": d.target, "value": +d.value });
           });
@@ -96,13 +98,13 @@
             .data(graph.links)
           .enter().append("line")
             .attr("class", "link")
-            .style("stroke-width", function (d) { return Math.sqrt(d.value); });
+            .style("stroke-width", function (d) { return d.value; });
 
           var node = svg.selectAll(".node")
             .data(graph.nodes)
           .enter().append("circle")
             .attr("class", "node")
-            .attr("r", 5)
+            .attr("r", function (d) { return Math.sqrt(d.weight) + 5 ;})
             .style("fill", function (d) { return color(d.group); })
             .call(force.drag);
 
@@ -120,6 +122,5 @@
           });
       });
   </script>
-  </div>
 </body>
 </html>

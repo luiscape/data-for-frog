@@ -68,13 +68,15 @@ makeNetwork <- function(df = NULL) {
 #     groups <- data.frame(group_name = c('level_0', 'level_1', 'level_2'), 
 #                          group_color = c(1, 2, 3))
 #     df <- merge(df, groups, by.x = 'variable', by.y = 'group_name', all.x = TRUE)
-    df <- melt(df, id.vars = c('indID', 'level_0', 'level_1'))
+    df$indID <- NULL
+    df$units <- NULL
+    df <- melt(df, id.vars = c('name', 'level_0', 'level_1'))
     df$variable <- NULL
     x <- data.frame(df$level_1, df$value)
-    y <- data.frame(df$value, df$indID)
+    y <- data.frame(df$value, df$name)
     names(x) <- c('level_0', 'level_1')
     names(y) <- c('level_0', 'level_1')
-    df$indID <- NULL
+    df$name <- NULL
     df$value <- NULL
     df <- rbind(df, x, y)
     df$value <- 1
@@ -82,7 +84,7 @@ makeNetwork <- function(df = NULL) {
     names(df) <- c('source', 'target', 'value', 'groupsource')
     tab <- data.frame(table(network_data$source))
     tab$grouptarget <- 1:nrow(tab)
-    names(tab) <- c('source', 'size', 'grouptarget')
+    names(tab) <- c('source', 'weight', 'grouptarget')
     df <- merge(df, tab, by = 'source', all.x = TRUE)
 return(df)
 } 
