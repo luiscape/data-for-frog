@@ -65,16 +65,22 @@ data <- classifyIndicators(indicator)
 
 # making network data
 makeNetwork <- function(df = NULL) {
-    groups <- data.frame(group_name = c('level_0', 'level_1', 'level_2'), 
-                         group_color = c(1, 2, 3))
-    df <- melt(df, id.vars = c('indID', 'name'))
-    df <- merge(df, groups, by.x = 'variable', by.y = 'group_name', all.x = TRUE)
-    colnames(df)[4] <- 'source'
+#     groups <- data.frame(group_name = c('level_0', 'level_1', 'level_2'), 
+#                          group_color = c(1, 2, 3))
+#     df <- merge(df, groups, by.x = 'variable', by.y = 'group_name', all.x = TRUE)
+    df <- melt(df, id.vars = c('indID', 'level_0', 'level_1'))
     df$variable <- NULL
-    df$name <- NULL
+    x <- data.frame(df$level_1, df$value)
+    y <- data.frame(df$value, df$indID)
+    names(x) <- c('level_0', 'level_1')
+    names(y) <- c('level_0', 'level_1')
+    df$indID <- NULL
+    df$value <- NULL
+    df <- rbind(df, x, y)
     df$value <- 1
-    df$grouptarget <- df$group_color
-    names(df) <- c('target', 'source', 'groupsource', 'value', 'grouptarget')
+    df$groupsource <- 1
+    df$grouptarget <- 1
+    names(df) <- c('source', 'target', 'value', 'groupsource', 'grouptarget')
 return(df)
 }
 network_data <- makeNetwork(data)
@@ -82,5 +88,6 @@ network_data <- makeNetwork(data)
 # writing CSV
 write.csv(network_data, 'data.csv', row.names = FALSE)
 
+# original column names
 # source    target	value	groupsource	grouptarget
  
