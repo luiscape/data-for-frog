@@ -14,6 +14,7 @@ final_value <- data.frame()
 source_list <- c('fts', 'rw', 'sw', 'op', 'unhcr')
 
 # Fetching and merging all data.
+message('loading data')
 for (i in 1:length(source_list)) { 
     src <- source_list[i]
     a  <- read.csv(paste0('source_data/', src, '-', 'dataset.csv'))
@@ -30,9 +31,11 @@ for (i in 1:length(source_list)) {
         zValue <- rbind(zValue, c)
     }
 }
+message('done')
 
 ## Selecting only CHD data.
 # Loading the current  CHD list.
+message('comparing to the CHD list')
 source('code/load_chd_list.R')
 old_indicator_list <- as.character(chd_list$old_indID)
 new_indicator_list <- as.character(chd_list$new_indID)
@@ -44,14 +47,17 @@ zIndicator <- rbind(zIndicator_1, zIndicator_2)
 # Cleaning old indicators
 zIndicator <- merge(zIndicator, chd_list, by.x = 'indID', by.y = 'old_indID', all.x = TRUE)
 zIndicator$indicator_name <- NULL
-zIndicator$indID <- ifelse(is.na(zIndicator$new_indID), as.character(x$indID), as.character(x$new_indID))
+zIndicator$indID <- ifelse(is.na(zIndicator$new_indID), as.character(zIndicator$indID), as.character(zIndicator$new_indID))
 zIndicator$new_indID <- NULL
 
 # Adding new codes to value table
 x <- merge(zIndicator, chd_list, by.x = 'indID', by.y = 'old_indID', all.x = TRUE)
 x$indicator_name <- NULL
 x$new_indID <- ifelse(is.na(x$new_indID), as.character(x$indID), as.character(x$new_indID))
-zValue$indID <- ifelse((zValue$indID %in% x$indID), x$new_indID, zValue$indID)
+zValue$indID <- ifelse((zValue$indID %in% x$indID), as.character(x$new_indID), zValue$indID)
+
+# cleaning
+zValue <- zValue[zValue$indID %in% zIndicator$indID, ]
 
 
 ## Running validation tests. 
